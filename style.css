@@ -1,6 +1,4 @@
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
 
 /* GENERAL */
 body{
@@ -8,7 +6,7 @@ body{
 }
 
 #wrapper{
-    background-color: #262626;
+    background-color: #181818;
     width : 25%;
     height: 60%;
     border-radius:10px;
@@ -28,7 +26,7 @@ body{
 
 /* SOCIAL MEDIAS LINKS */
 
-#twitterBox,#instagramBox,#frontendMentorBox,#githubBox,#linkedInBox{
+.box__socialMedias{
     background-color:#333333;
     padding:10px;
     width:70%;
@@ -43,16 +41,21 @@ body{
 
   .link{
     color:#fefefe;
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Inter", sans-serif;
-    font-size:12px;
+    font-size:16px;
   }
 
-  #githubBox:hover, #instagramBox:hover,#frontendMentorBox:hover,#githubBox:hover,#linkedInBox:hover, #twitterBox:hover, .link:hover{
+  .box__socialMedias:hover,.link:hover{
     color:#333333;
     background-color:greenyellow;
+    cursor: pointer;
   }
 
+  .box__socialMedias:active,.link:active{
+    color:#333333;
+    transform: scale(1.2);
+  }
 
 /* IMAGE */
   img{
@@ -76,13 +79,14 @@ body{
     font-size:20px;
     color:white;
     font-family: "Inter", sans-serif;
-    font-weight:600;
+    font-size: 24px;
+    font-weight:500;
     margin-bottom:1px;
     letter-spacing: 1px;
   }
 
   #location{
-    font-size:12px;
+    font-size:16px;
     font-weight: bold;
     color:greenyellow;
     font-family: "Inter", sans-serif;
@@ -94,22 +98,23 @@ body{
     color:#a6a6a6;
     margin-top:15px;
     font-family: "Inter", sans-serif;
-    font-size:13px;
+    font-size:16px;
+    font-weight: 300;
     }
 
 /* MEDIA - MOBILE */
   
   @media (max-width: 480px){
     #wrapper{
-      width : 80%;
+      width:90%;
     }
   }
 
 /* MEDIA - TABLETS */
 
-  @media (min-width:481px) and (max-width: 768px){
+  @media (min-width:481px) and (max-width: 1024px){
     #wrapper{
-      width : 45%;
+      width:55%;
     }
   }
 
