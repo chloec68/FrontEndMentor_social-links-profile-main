@@ -1,3 +1,3 @@
 Frontend Mentor project #2 
-Beginner Level 
+Newbie Level 
 HTML/CSS
